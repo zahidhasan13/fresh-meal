@@ -1,0 +1,62 @@
+@import url(utilities.css);
+
+/* Header */
+header .top_bar{
+    background: var(--secondary);
+    color: var(--pure);
+    padding: 0.75rem 0;
+}
+header .top_bar .social a{
+    margin-right: 0.75rem;
+}
+header .top_bar .auth div > img{
+    margin-right: 0.5rem;
+}
+header .top_bar .auth div > a{
+    color: var(--pure);
+    font-family: "Raleway-SemiBold";
+}
+header .top_bar .auth .divider{
+    margin: 0 0.9rem;
+    font-weight: bold;
+}
+header .navbar .nav_top{
+    padding: 2rem 0;
+}
+header .navbar .nav_top .contact img, header .navbar .nav_top .time img{
+    margin-right: 1rem;
+}
+header .navbar .nav_top .contact div, header .navbar .nav_top .time div{
+    display: flex;
+    flex-direction: column;
+}
+header .navbar .nav_top .contact div > span:first-child, header .navbar .nav_top .time div > span:first-child{
+    font-family: "Raleway-Black";
+    font-size: 0.75rem;
+}
+header .navbar .nav_top .contact div > span:last-child, header .navbar .nav_top .time div > span:last-child{
+    color: var(--ternary);
+    font-family: "Raleway-SemiBold";
+    font-size: 0.75rem;
+}
+header .navbar .nav_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header .navbar .nav_link a{
+    font-family: "Raleway-SemiBold";
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: var(--secondary);
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+}
+header .navbar .nav_link a:hover{
+    background: var(--primary);
+    color: var(--pure);
+}
+header .navbar .nav_link a.active{
+    background: var(--primary);
+    color: var(--pure);
+}
