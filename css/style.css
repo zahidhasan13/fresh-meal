@@ -60,3 +60,275 @@ header .navbar .nav_link a.active{
     background: var(--primary);
     color: var(--pure);
 }
+header .hero{
+    background: url(../images/hero.png) no-repeat;
+    background-position: 0% 0%;
+    height: 600px;
+    overflow: hidden;
+}
+header .hero .container{
+    position: relative;
+}
+header .hero .welcome span{
+    font-family: "Raleway-Bold";
+    margin-right: 0.75rem;
+    color: var(--secondary);
+}
+header .hero h1{
+    font-family: "Raleway-ExtraBold";
+    color: var(--secondary);
+    font-size: 2.5rem;
+    margin: 0.75rem 0;
+}
+header .hero p{
+    width: 50%;
+    line-height: 1.5;
+    font-family: "Raleway-Medium";
+}
+header .hero .hero_btn{
+    margin-top: 1rem;
+}
+header .hero .hero_btn button{
+    margin-right: 1rem;
+}header .hero .hero_img{
+    position: absolute;
+    top: -40px;
+    right: 40px;
+}
+
+/* Top Products */
+section.top_products{
+    background: var(--light);
+}
+section.top_products .food_slider .food_card{
+    background: var(--heaven);
+    padding: 1.5rem 0;
+    border-radius: 5px;
+}
+section.top_products .food_slider .food_card .product_image img{
+    width: 80%;
+    height: 200px;
+    object-fit: contain;
+}
+hr{
+    border: 1px solid var(--light);
+    opacity: 0.8;
+    margin: 1.5rem 0;
+}
+section.top_products .food_slider .food_card h2{
+    font-family: "Raleway-Bold";
+    font-size: 1.3rem;
+}
+section.top_products .food_slider .food_card .ratings{
+    margin-top: 0.25rem;
+    margin-bottom: 0.5rem;
+}
+section.top_products .food_slider .food_card .ratings img{
+    margin-right: 0.25rem;
+}
+section.top_products .food_slider .food_card .price{
+    font-family: "Raleway-Medium";
+    margin-bottom: 1rem;
+}
+section.top_products .food_slider .food_card button{
+    font-family: "RaleWay-Medium";
+    color: var(--secondary);
+    background: var(--heaven);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    width: 50%;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+section.top_products .food_slider .food_card button img{
+    height: 32px;
+    background: var(--primary);
+    padding: 0.5rem;
+    margin-right: 1.2rem;
+}
+section.top_products .food_slider .food_card button:hover{
+    background: var(--primary);
+    color: var(--heaven);
+}
+.slick-slide{
+    margin: 0 10px;
+}
+.slick-list{
+    margin: 0 -10px;
+}
+section.top_products .slider{
+    position: relative;
+}
+section.top_products .slider .slider-btn{
+    width: 30px;
+    height: 30px;
+    background: var(--primary);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.prev-btn{
+    position: absolute;
+    top: 46%;
+    left: -3rem;
+    z-index: 1;
+}
+.next-btn{
+    position: absolute;
+    top: 46%;
+    right: -3rem;
+    z-index: 1;
+}
+section.top_products .btn-wrapper{
+    margin-top: 2rem;
+}
+.slick-track{
+    padding: 1rem 0;
+}
+/* About Meal */
+section.about_meal .about-meal-wrapper .about-left img{
+    width: 85%;
+}
+section.about_meal .about-meal-wrapper .about-right h2{
+    font-family: "Raleway-Bold";
+    font-size: 1.4rem;
+    color: var(--secondary);
+    line-height: 1.3;
+    margin-bottom: 2rem;
+}
+section.about_meal .about-meal-wrapper .about-right p{
+    line-height: 1.7;
+    margin-bottom: 4rem;
+}
+/* Our Services */
+section.our_service{
+    background: var(--light);
+}
+section.our_service .service_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+    margin-top: 8rem;
+}
+section.our_service .service_wrapper .service_card{
+    background: var(--heaven);
+    padding: 2rem;
+    padding-top: 4rem;
+
+    position: relative;
+}
+section.our_service .service_wrapper .service_card img{
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.our_service .service_wrapper .service_card h2{
+    font-family: "Raleway-Bold";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.our_service .service_wrapper .service_card p{
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+/* Big Deal */
+section.big_deal{
+    background: linear-gradient(rgba(35,43,56,0.9), rgba(35,43,56,0.9)),url(../images/food-table.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section.big_deal .timer{
+    margin-bottom: 2rem;
+    gap: 2rem;
+}
+section.big_deal .timer div{
+    background: var(--primary);
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+section.big_deal .timer div span:first-child{
+    font-family: "Raleway-SemiBold";
+    font-size: 2.5rem;
+    color: var(--heaven);
+    margin-bottom: 0.05rem;
+}
+section.big_deal .timer div span:last-child{
+    font-family: "Raleway-Medium";
+    color: var(--heaven);
+}
+/* Blog */
+section.blog{
+    background: var(--light);
+}
+section.blog .blog_wrapper{
+    gap: 2rem;
+}
+section.blog .blog_wrapper .blog_card{
+    background: var(--heaven);
+}
+section.blog .blog_wrapper .blog_card div img{
+    width: 100%;
+}
+section.blog .blog_wrapper .blog_card .card_content{
+    padding: 2rem;
+}
+section.blog .blog_wrapper .blog_card .card_content .post_meta{
+    margin-bottom: 1rem;
+}
+section.blog .blog_wrapper .blog_card .card_content .post_meta .comment_count{
+    margin-left: 1rem;
+}
+section.blog .blog_wrapper .blog_card .card_content h2{
+    font-family: "Raleway-bold";
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+}
+section.blog .blog_wrapper .blog_card .card_content p{
+    line-height: 1.6;
+}
+section.blog .btn_wrapper{
+    margin-top: 2rem;
+}
+/* Newsletter */
+section.newsletter{
+    background: var(--primary);
+}
+section.newsletter .newsletter_wrapper > div:first-child img{
+    width: 90%;
+}
+section.newsletter .newsletter_wrapper div h2{
+    font-family: "Raleway-Bold";
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+section.newsletter .newsletter_wrapper div p{
+    font-family: "Raleway-Medium";
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+section.newsletter .newsletter_wrapper div .input_wrapper{
+    background: var(--heaven);
+    display: flex;
+    padding: 0.3rem;
+    border-radius: 5px;
+}
+section.newsletter .newsletter_wrapper div .input_wrapper input{
+    width: 100%;
+    border: none;
+    padding: 0 1rem;
+    font-size: 1rem;
+}
+section.newsletter .newsletter_wrapper div .input_wrapper input:focus{
+    outline: none;
+}

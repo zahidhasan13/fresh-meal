@@ -27,6 +27,10 @@
     src: url(../fonts/Raleway-Bold.ttf);
 }
 @font-face{
+    font-family: "Raleway-ExtraBold";
+    src: url(../fonts/Raleway-ExtraBold.ttf);
+}
+@font-face{
     font-family: "Raleway-Black";
     src: url(../fonts/Raleway-Black.ttf);
 }
@@ -83,8 +87,15 @@
       max-width: 1152px;
     }
   }
+/* Common Css */
+section{
+  padding: 4rem 0;
+}
 .flex{
     display: flex;
+}
+.flex-1{
+    flex: 1;
 }
 .justify-center{
     justify-content: center;
@@ -104,30 +115,37 @@
 .text-white{
     color: var(--heaven);
 }
+.text-danger{
+  color: var(--danger);
+}
 .btn{
     padding: 0.75rem 1rem;
     background: none;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     outline: none;
     font-size: 1rem;
+    border-radius: 5px;
+    font-family: "Raleway-SemiBold";
+    transition: all 0.3s ease;
+    cursor: pointer;
 }
 .btn-primary{
     background: var(--primary);
     color: var(--pure);
 }
-.btn-primary{
+.btn-primary:hover{
     background: var(--pure);
     color: var(--primary);
-    border: 1px solid var(--primary);
+    border: 2px solid var(--primary);
 }
 .btn-secondary{
     background: var(--secondary);
     color: var(--pure);
 }
-.btn-secondary{
+.btn-secondary:hover{
     background: var(--pure);
     color: var(--secondary);
-    border: 1px solid var(--secondary);
+    border: 2px solid var(--secondary);
 }
 .magic_shadow{
     background: var(--heaven);
@@ -144,4 +162,38 @@
     position: absolute;
     bottom: -20px;
     z-index: -1;
+}
+.magic_shadow-sm{
+    background: var(--heaven);
+    position: relative;
+}
+.magic_shadow-sm:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 69px;
+    background-image: url(../icons/shadow-sm.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: -20px;
+    z-index: -1;
+}
+.section_heading{
+  font-family: "Raleway-Bold";
+  text-align: center;
+  position: relative;
+  margin-bottom: 6rem;
+}
+.section_heading:after{
+  content: '';
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-image: url(../icons/hr.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+
 }

@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Restrurent</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -39,37 +44,315 @@
       </div>
       <nav class="navbar">
         <div class="container">
-            <div class="nav_top flex align-center justify-between">
-                <div class="contact flex align-center">
-                    <img src="./icons/phone.svg" alt="">
-                    <div>
-                        <span>Call US: (+84) 123 456 789</span>
-                        <span>E-mail : support@freshmeal.com</span>
-                    </div>
-                </div>
-                <div class="branding">
-                    <img src="./icons/logo.svg" alt="">
-                </div>
-                <div class="time flex align-center">
-                    <img src="./icons/clock.svg" alt="">
-                    <div>
-                        <span>Working Hours:</span>
-                        <span>E-mail : support@freshmeal.com</span>
-                    </div>
-                </div>
+          <div class="nav_top flex align-center justify-between">
+            <div class="contact flex align-center">
+              <img src="./icons/phone.svg" alt="" />
+              <div>
+                <span>Call US: (+84) 123 456 789</span>
+                <span>E-mail : support@freshmeal.com</span>
+              </div>
             </div>
-            <div class="nav_link magic_shadow">
-                <a href="#" class="active">home</a>
-                <a href="#">about us</a>
-                <a href="#">products</a>
-                <a href="#">blog</a>
-                <a href="#">shop</a>
-                <a href="#">service</a>
-                <a href="#">gallery</a>
-                <a href="#">contact us</a>
+            <div class="branding">
+              <img src="./icons/logo.svg" alt="" />
             </div>
+            <div class="time flex align-center">
+              <img src="./icons/clock.svg" alt="" />
+              <div>
+                <span>Working Hours:</span>
+                <span>E-mail : support@freshmeal.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav_link magic_shadow">
+          <a href="#" class="active">home</a>
+          <a href="#">about us</a>
+          <a href="#">products</a>
+          <a href="#">blog</a>
+          <a href="#">shop</a>
+          <a href="#">service</a>
+          <a href="#">gallery</a>
+          <a href="#">contact us</a>
         </div>
       </nav>
+      <div class="hero flex align-center">
+        <div class="container">
+          <div class="welcome flex align-center">
+            <span>Welcome to</span>
+            <img src="./icons/logo-2.svg" alt="" />
+          </div>
+          <h1>
+            The World Best <span class="text-primary">Shoping</span> Website
+          </h1>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy.
+          </p>
+          <div class="hero_btn">
+            <button class="btn btn-primary">Read More</button>
+            <button class="btn btn-secondary">Shop Now</button>
+          </div>
+          <div class="hero_img">
+            <img src="./images/straw.png" alt="" />
+          </div>
+        </div>
+      </div>
     </header>
+    <!-- Top Products -->
+    <section class="top_products">
+      <div class="container">
+        <h1 class="section_heading">Top Ptoducts</h1>
+        <div class="slider">
+          <button class="slider-btn prev-btn flex justify-center align-center">
+            <img src="./icons/pre.svg" alt="" />
+          </button>
+          <button class="slider-btn next-btn flex justify-center align-center">
+            <img src="./icons/next.svg" alt="" />
+          </button>
+          <div class="food_slider">
+            <div class="food_card magic_shadow-sm">
+              <div class="product_image flex justify-center">
+                <img src="./images/plate-1.png" alt="" />
+              </div>
+              <hr />
+              <h2 class="text-center">Summer Salad</h2>
+              <div class="ratings flex align-center justify-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center text-danger">$1.25</div>
+              <div class="flex justify-center">
+                <button class="flex align-center">
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+            <div class="food_card magic_shadow-sm">
+              <div class="product_image flex justify-center">
+                <img src="./images/plate-2.png" alt="" />
+              </div>
+              <hr />
+              <h2 class="text-center">Winter Salad</h2>
+              <div class="ratings flex align-center justify-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center text-danger">$1.25</div>
+              <div class="flex justify-center">
+                <button class="flex align-center">
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+            <div class="food_card magic_shadow-sm">
+              <div class="product_image flex justify-center">
+                <img src="./images/plate-3.png" alt="" />
+              </div>
+              <hr />
+              <h2 class="text-center">Cottege Pie</h2>
+              <div class="ratings flex align-center justify-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center text-danger">$1.25</div>
+              <div class="flex justify-center">
+                <button class="flex align-center">
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+            <div class="food_card magic_shadow-sm">
+              <div class="product_image flex justify-center">
+                <img src="./images/plate-2.png" alt="" />
+              </div>
+              <hr />
+              <h2 class="text-center">Cottege Pie</h2>
+              <div class="ratings flex align-center justify-center">
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/start-filled.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+                <img src="./icons/star-grey.svg" alt="" />
+              </div>
+              <div class="price text-center text-danger">$1.25</div>
+              <div class="flex justify-center">
+                <button class="flex align-center">
+                  <img src="./icons/cart-2.svg" alt="" />
+                  <span>Add to cart</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="text-center btn-wrapper">
+          <button class="btn btn-secondary">View More</button>
+        </div>
+      </div>
+    </section>
+    <!-- About Fresh Meal -->
+    <section class="about_meal">
+      <div class="container">
+        <h1 class="section_heading">About Fresh Meal</h1>
+        <div class="about-meal-wrapper flex align-center">
+          <div class="about-left flex-1">
+              <img src="./images/yogurt.png" alt="" />
+          </div>
+          <div class="about-right flex-1">
+            <h2>
+              Freshmeal is a long established fact that a reader will be
+              distracted
+            </h2>
+            <p>
+              Contrary to popular belief, Lorem Ipsum is not simply random text.
+              It has roots in a piece of classical Latin literature from 45 BC,
+              making it over 2000 years old. Richard McClintock, a Latin
+              professor at Hampden Sydney College in Virginia, The standard
+              chunk of Lorem Ipsum used since the 1500s is reproduced below for
+              those interested.
+            </p>
+            <button class="btn btn-secondary">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Service -->
+    <section class="our_service">
+      <div class="container">
+        <h1 class="section_heading">Our Services</h1>
+        <div class="service_wrapper">
+          <div class="service_card text-center">
+            <img src="./icons/transport.svg" alt="">
+            <h2>Free Home Delivery</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="btn btn-secondary">Read More</button>
+          </div>
+          <div class="service_card text-center">
+            <img src="./icons/bag.svg" alt="">
+            <h2>Free Home Delivery</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="btn btn-primary">Read More</button>
+          </div>
+          <div class="service_card text-center">
+            <img src="./icons/usd.svg" alt="">
+            <h2>Free Home Delivery</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            <button class="btn btn-secondary">Read More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Big Deal -->
+    <section class="big_deal">
+      <div class="container">
+        <h1 class="section_heading text-white">Big Deals of the Week</h1>
+        <div class="timer flex align-center justify-center">
+          <div>
+            <span>02</span>
+            <span>Days</span>
+          </div>
+          <div>
+            <span>23</span>
+            <span>Hours</span>
+          </div>
+          <div>
+            <span>55</span>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <span>58</span>
+            <span>Second</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Blog -->
+    <section class="blog">
+      <div class="container">
+        <h1 class="section_heading">Lastest News from Blog</h1>
+        <div class="blog_wrapper flex justify-between align-center">
+          <div class="blog_card">
+            <div>
+              <img src="./images/coffee.jpg" alt="">
+            </div>
+            <div class="card_content">
+              <div class="post_meta flex justify-between align-center">
+                <span>July 03, 2017</span>
+                <div>
+                  <span>Posted by <strong>FreshMeal </strong></span>
+                  <span class="comment_count">12 Comments</span>
+                </div>
+              </div>
+              <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more letters.</p>
+            </div>
+          </div>
+          <div class="blog_card">
+            <div>
+              <img src="./images/donut.jpg" alt="">
+            </div>
+            <div class="card_content">
+              <div class="post_meta flex justify-between align-center">
+                <span>July 03, 2017</span>
+                <div>
+                  <span>Posted by <strong>FreshMeal </strong></span>
+                  <span class="comment_count">12 Comments</span>
+                </div>
+              </div>
+              <h2>Lorem Ipsum is simply dummy text of the printing</h2>
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more letters.</p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center btn_wrapper">
+          <button class="btn btn-secondary">
+            View More
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Newsletter -->
+    <section class="newsletter">
+      <div class="container">
+        <div class="newsletter_wrapper flex align-center">
+          <div class="flex-1">
+            <img src="./images/rasberry.png" alt="">
+          </div>
+          <div class="flex-1">
+            <h2>Subscribe to your newsletter</h2>
+            <p>Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.</p>
+            <div class="input_wrapper">
+              <input type="text" placeholder="email@freshmail.com">
+              <button class="btn btn-primary">Subscribe</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="js/app.js"></script>
   </body>
 </html>
